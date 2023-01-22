@@ -1,0 +1,8 @@
+@import 'app/styles/variables.scss';
+
+.main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: $gray10;
+}

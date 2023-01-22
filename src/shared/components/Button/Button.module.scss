@@ -1,0 +1,25 @@
+@import 'app/styles/variables.scss';
+
+.button {
+  outline: none;
+  border: 1px solid $black;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  cursor: pointer;
+
+  &:disabled {
+    border: 1px solid $gray15;
+    background-color: $gray5;
+    color: $gray20;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background-color: $blue10;
+}
+
+.danger {
+  background-color: $red10;
+}

@@ -1,0 +1,42 @@
+@import 'app/styles/variables.scss';
+
+.formContainer {
+  overflow: hidden;
+  position: relative;
+  background-color: $white;
+  padding: 1.5rem 1rem;
+  border-radius: 0.4rem;
+  min-width: 320px;
+
+  .formHead {
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    .formButtonWrapper {
+      flex-direction: column;
+      display: flex;
+      gap: 0.3rem;
+
+      .topSubmitButtons {
+        display: flex;
+        gap: 0.3rem;
+      }
+    }
+  }
+}
+
+.loadingOverlay {
+  z-index: 10;
+  background-color: $gray18;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  cursor: progress;
+}
